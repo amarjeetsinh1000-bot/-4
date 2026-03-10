@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;600;700&family=Noto+Serif+Gujarati:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+/* 🌟 સાઈઝ અને સેન્ટરિંગ 🌟 */
+* { box-sizing: border-box; }
+
+/* 🌟 આખી ક્વિઝ માટે Hind Vadodara ફોન્ટ 🌟 */
+body, input, button, textarea, select {
+    font-family: 'Hind Vadodara', 'Noto Serif Gujarati', sans-serif !important;
+}
+
+/* 🌟 સર્ટિફિકેટના ક્લાસિક લુક માટે Noto Serif Gujarati 🌟 */
+/* આનાથી કર્સીવ ફોન્ટ સિવાયના બધા ટેક્સ્ટ ગુજરાતી ફોન્ટમાં રહેશે */
+#certificate {
+    font-family: 'Noto Serif Gujarati', serif;
+}
+
+/* -------------------------------------
+   General Setup & Background Fix
+-------------------------------------- */
+html, body { margin: 0; padding: 0; min-height: 100vh; }
+
+body {
+    color: black; display: flex; justify-content: center; align-items: center; text-align: center;
+    user-select: none; overflow-x: hidden; overflow-y: auto; padding: 30px 10px; 
+    
+    /* 🌈 Ultra Multi Gradient */
+    background: linear-gradient(-45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 600% 600%; animation: gradientMove 12s ease infinite;
+    background-attachment: fixed !important; 
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; } 25% { background-position: 50% 100%; }
+    50% { background-position: 100% 50%; } 75% { background-position: 50% 0%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* -------------------------------------
+   Main Container & Cards
+-------------------------------------- */
+.container {
+    width: 95%; max-width: 900px; background: rgba(0, 0, 0, 0.75); border-radius: 20px;
+    padding: 25px; border: 4px solid #fff; box-shadow: 0 0 40px rgba(0, 212, 255, 0.6); margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.85); /* 85% પારદર્શક સફેદ */
+    backdrop-filter: blur(10px); /* પાછળનું બેકગ્રાઉન્ડ બ્લર થશે */
+    padding: 25px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5); /* આછી સફેદ બોર્ડર */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/* -------------------------------------
+   Typography & Header
+-------------------------------------- */
+#question { font-size: 30px; font-weight: 700; margin-top: 10px !important; margin-bottom: 20px; line-height: 1.5; }
+.creator-name { font-size: 24px; font-weight: 700; color: #EA3680; margin: 5px 0 2px 0; }
+.school-name { font-size: 18px; font-weight: 700; color: #75163F; font-style: italic; margin: 2px 0; }
+.school-location { font-size: 16px; color: #75163F; font-style: italic; margin: 2px 0; }
+
+/* -------------------------------------
+   Inputs & Buttons
+-------------------------------------- */
+input {
+    width: 85%; max-width: 320px; padding: 14px 20px; margin: 13px auto; display: block; text-align: center;
+    font-size: 18px; font-weight: 600; color: #001f3f; background: #f8f9fa; border: 2px solid transparent;
+    border-radius: 50px; outline: none; box-shadow: inset 0 3px 6px rgba(0,0,0,0.05), 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+input:focus { background: #ffffff; border: 2px solid #ff4081; box-shadow: 0 0 20px rgba(255, 64, 129, 0.5); transform: scale(1.03); }
+
+/* 🌟 બટન સ્ટાઈલ 🌟 */
+.start-btn, .regular-btn {
+    background: linear-gradient(135deg, #ff512f, #dd2476) !important; color: white; font-weight: 700;
+    border: none; border-radius: 50px; cursor: pointer; display: block; letter-spacing: 1px;
+    transition: all 0.2s ease; animation: pulseGlow 2s infinite;
+}
+.start-btn { font-size: 24px; padding: 15px 40px; margin: 25px auto; box-shadow: 0 10px 20px rgba(221, 36, 118, 0.4), inset 0 -5px 0 rgba(0, 0, 0, 0.2); }
+.regular-btn { font-size: 18px; padding: 10px 25px; margin: 10px 5px; display: inline-block; animation: none; }
+/* 🔵 આગળનો પ્રશ્ન બટન માટે નવો સ્કાય બ્લુ કલર 🔵 */
+.next-btn {
+    background: linear-gradient(to bottom, #2ecc71, #27ae60) !important; /* સ્ક્રીનશોટ મુજબનો કલર */
+    color: white; 
+    font-weight: 700;
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    display: block; 
+    letter-spacing: 1px;
+    font-size: 20px; 
+    padding: 12px 35px; 
+    margin: 25px auto 10px auto; 
+    box-shadow: 0 8px 15px rgba(46, 204, 113, 0.4), inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    animation: bluePulseGlow 2s infinite; /* બ્લુ એનિમેશન */
+}
+
+.start-btn:hover, .next-btn:hover, .regular-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 20px rgba(221, 36, 118, 0.6), inset 0 -4px 0 rgba(0, 0, 0, 0.2); animation: none; }
+.start-btn:active, .next-btn:active, .regular-btn:active { transform: translateY(2px); box-shadow: 0 4px 8px rgba(221, 36, 118, 0.4), inset 0 3px 6px rgba(0, 0, 0, 0.3); }
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(221, 36, 118, 0.6), inset 0 -5px 0 rgba(0,0,0,0.2); }
+    70% { box-shadow: 0 0 0 15px rgba(221, 36, 118, 0), inset 0 -5px 0 rgba(0,0,0,0.2); }
+    100% { box-shadow: 0 0 0 0 rgba(221, 36, 118, 0), inset 0 -5px 0 rgba(0,0,0,0.2); }
+}
+
+/* 🔵 બ્લુ બટન માટે નવું એનિમેશન 🔵 */
+@keyframes bluePulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.6), inset 0 -4px 0 rgba(0,0,0,0.1); }
+    70% { box-shadow: 0 0 0 15px rgba(46, 204, 113, 0), inset 0 -4px 0 rgba(0,0,0,0.1); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0), inset 0 -4px 0 rgba(0,0,0,0.1); }
+}
+
+.next-btn:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 12px 20px rgba(52, 152, 219, 0.6); 
+}
+
+footer {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #16417C; /* તમે તમારી પસંદગીનો રંગ રાખી શકો છો */
+}
+
+/* 🖋️ સિગ્નેચર સ્ટાઈલ */
+.sig-wrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.sig-cursive {
+    font-family: 'Dancing Script', cursive !important; /* અહીં !important ઉમેર્યું */
+    font-size: 35px; /* સહી થોડી મોટી દેખાય તે માટે */
+    color: #1a365d;
+    margin-bottom: 1px; /* લાઈન સાથે સેટ કરવા માટે */
+    line-height: 1;
+}
+
+.sig-line {
+    width: 180px;
+    height: 1.5px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+.sig-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.sig-title {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* -------------------------------------
+   Quiz Options & Top Bar
+-------------------------------------- */
+#options { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+.option {
+    position: relative; padding: 18px 20px; border-radius: 50px; border: 2px solid #00e5ff;
+    background: linear-gradient(145deg, #001f3f, #003366); color: #fff; font-size: 18px; font-weight: 600;
+    cursor: pointer; transition: 0.3s; box-shadow: 0 0 15px rgba(0,229,255,0.5); text-align: center;
+}
+.option:hover { transform: scale(1.03); box-shadow: 0 0 25px #00e5ff; }
+.correct { background: linear-gradient(145deg, #1b5e20, #4CAF50) !important; border-color: #4CAF50 !important; box-shadow: 0 0 25px #4CAF50 !important; color: white; }
+.wrong { background: linear-gradient(145deg, #b71c1c, #f44336) !important; border-color: #f44336 !important; color: white; box-shadow: 0 0 25px #f44336 !important; }
+
+/* 🌟 ટોપ બાર કન્ટેનર 🌟 */
+.top-bar { 
+    display: flex; 
+    justify-content: center; /* કોમ્પ્યુટરમાં બંને બોક્સ નજીક અને સેન્ટરમાં રહેશે */
+    align-items: center; 
+    background: rgba(255,255,255,0.1); 
+    padding: 10px; 
+    border-radius: 15px; 
+    margin-bottom: 25px; 
+    width: 100%;
+    gap: 20px; /* બંને વચ્ચે યોગ્ય જગ્યા રાખશે */
+    box-sizing: border-box;
+}
+
+/* 🌟 કેપ્સુલ ટાઈમર ફિક્સ 🌟 */
+.timer-display {
+    background: linear-gradient(145deg, #ff512f, #dd2476) !important;
+    color: #ffffff !important;
+    flex: 1;
+    font-size: 18px; /* ફોન્ટ સાઈઝ થોડી ઘટાડી જેથી કપાય નહીં */
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+        padding: 8px 16px;
+    gap: 5px;
+    white-space: nowrap; 
+    max-width: 250px; /* ટાઈમરને ચોક્કસ જગ્યા આપશે */
+    justify-content: center;
+    margin: 0 auto; /* સેન્ટરમાં રાખવા માટે */
+}
+
+/* 🌟 આકર્ષક બ્લુ સ્કોર બેજ 🌟 */
+.stylish-score {
+    background: linear-gradient(145deg, #00c6ff, #0072ff) !important;
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;
+        padding: 8px 16px;
+    border-radius: 50px; /* પૂરેપૂરો કેપ્સુલ આકાર */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; /* લખાણ બીજી લાઈનમાં ન જાય તે માટે */
+    max-width: 250px; /* ટાઈમરને ચોક્કસ જગ્યા આપશે */
+    justify-content: center;
+    margin: 0 auto; /* સેન્ટરમાં રાખવા માટે */
+}
+
+/* 📱 મોબાઈલ માટે કોઈ ફેરફાર ન થાય તે માટે (Media Query) */
+@media (max-width: 600px) {
+    .top-bar {
+        justify-content: space-between; /* મોબાઈલમાં જૂની સ્ટાઈલ મુજબ છેડા પર રહેશે */
+        gap: 10px;
+    }
+    .timer-display, .stylish-score {
+        max-width: none; /* મોબાઈલમાં પહોળાઈ પર કોઈ મર્યાદા નહીં રહે */
+        font-size: 14px;
+        height: 45px;
+    }
+}
+
+/* -------------------------------------
+   3D Progress Bar & Dashboard
+-------------------------------------- */
+.progress { display: flex; justify-content: space-between; align-items: center; gap: 6px; margin: 15px auto 25px auto; width: 95%; background: transparent; height: auto; }
+.step-box { flex: 1; height: 16px; background: #1e293b; border-radius: 6px; box-shadow: inset 0 2px 5px rgba(0,0,0,0.8), 0 1px 2px rgba(255,255,255,0.1); transition: all 0.4s ease; }
+.step-box.active { background: #ffd700; box-shadow: 0 0 12px #ffd700, inset 0 2px 5px rgba(255,255,255,0.6); transform: scale(1.15); }
+.step-box.correct-step { background: linear-gradient(145deg, #00e676, #1b5e20) !important; box-shadow: 0 0 15px #00e676, inset 0 2px 5px rgba(255,255,255,0.6); border: 1px solid #b2ff59; transform: scale(1.1); }
+.step-box.wrong-step { background: linear-gradient(145deg, #ff1744, #b71c1c) !important; box-shadow: 0 0 15px #ff1744, inset 0 2px 5px rgba(255,255,255,0.6); border: 1px solid #ff8a80; transform: scale(1.1); }
+.step-box.skipped-step { background: #64748b !important; transform: scale(1.0); opacity: 0.7; }
+
+.dashboard { display: flex; justify-content: space-between; gap: 15px; margin: 20px 0 30px 0; flex-wrap: wrap; }
+.dash-card { background: #f8fafc; border-radius: 15px; padding: 20px; flex: 1; min-width: 120px; text-align: left; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05), 0 4px 10px rgba(0,0,0,0.05); }
+.dash-title { font-size: 16px; color: #64748b; margin: 0 0 5px 0; font-weight: 600; }
+.dash-value { font-size: 40px; color: #0f172a; margin: 0; font-weight: 700; }
+.breakdown-list { list-style: none; padding: 0; margin: 0; font-size: 16px; color: #334155; font-weight: 600; }
+.breakdown-list li { display: flex; justify-content: space-between; margin-bottom: 8px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; }
+.breakdown-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.emoji { font-size: 20px; min-height: 40px; margin-top: 10px; padding: 5px; line-height: 1.4; word-wrap: break-word; }
+
+
+/* 🌟 નવું લાઈટ લેન્ડસ્કેપ સર્ટિફિકેટ (Premium Light Landscape) 🌟 */
+#certificate {
+    display: none;
+    width: 1123px;
+    height: 794px;
+    padding: 50px;
+    background-color: #fdfbf4 !important; /* બેકગ્રાઉન્ડ ફિક્સ કરવા માટે */
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    color: #333;
+    overflow: hidden !important; /* પટ્ટો બહાર ન નીકળે તે માટે */
+    margin: auto;
+        border: none !important; /* વધારાની કિનારીઓ દૂર કરવા */
+    z-index: 1;
+}
+
+/* 💠 બેકગ્રાઉન્ડ ફ્લોરલ પેટર્ન લેયર 💠 */
+#certificate::before {
+    content: "✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀ ✿ ⚜ ❀";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    line-height: 1.8;
+    color: rgba(200, 179, 136, 0.15); /* પેટર્નનો આછો સોનેરી રંગ */
+    text-align: justify;
+    padding: 20px;
+    z-index: -1; /* ટેક્સ્ટની પાછળ રાખવા માટે */
+    pointer-events: none;
+    word-break: break-all;
+}
+
+/* 🌟 ડબલ બોર્ડર ડિઝાઇન 🌟 */
+.cert-border {
+    position: absolute; 
+    top: 10px; left: 10px; right: 10px; bottom: 10px; /* કિનારીથી અંતર ઘટાડ્યું જેથી બોર્ડર મોટી દેખાય */
+    border: 12px solid #1a365d; /* અહીં 5px ની જગ્યાએ 12px અથવા તમારી જરૂરિયાત મુજબ વધારો */
+    pointer-events: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2); /* બોર્ડરને થોડો ઉભાર આપવા માટે */
+}
+
+.cert-border-inner {
+    position: absolute; 
+    top: 30px; left: 30px; right: 30px; bottom: 30px; /* અંદરની બોર્ડરનું અંતર એડજસ્ટ કર્યું */
+    border: 4px solid #c8b388; /* સોનેરી બોર્ડરને પણ થોડી જાડી કરી (4px) */
+    pointer-events: none;
+}
+
+/* 🌟 ટેક્સ્ટ અને ટાઈટલ 🌟 */
+.cert-title {
+    font-family: 'Cinzel', serif; /* નવો સ્ટાઇલિશ ફોન્ટ */
+    font-size: 50px; 
+    font-weight: 700; 
+    color: #1a365d;
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    letter-spacing: 4px; /* અક્ષરો વચ્ચે થોડી જગ્યા */
+    display: inline-block;
+    border-bottom: 6px double #c8b388;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-transform: uppercase; /* બધા અક્ષરો કેપિટલ */
+    
+    /* 🌟 ડબલ લાઈન બોર્ડર માટેનો કોડ 🌟 */
+    display: inline-block; /* બોર્ડર લખાણ જેટલી જ રહે તે માટે */
+    border-bottom: 6px double #817F26; /* સોનેરી રંગની ડબલ લાઈન */
+    padding-bottom: 7px; /* લખાણ અને લાઈન વચ્ચે જગ્યા રાખવા */
+}
+
+.cert-subtitle { font-size: 32px; font-weight: 700; color: #1a365d; margin-bottom: 25px; }
+.cert-body { font-size: 24px; color: #444; margin: 15px 0; }
+.cert-name { font-size: 48px; font-weight: 700; color: #b81d54; margin: 15px 0; }
+.cert-school { font-size: 26px; color: #b81d54; margin-bottom: 15px; font-weight: 700; }
+
+/* 🌟 ગોળ સ્કોર બેજ 🌟 */
+.score-badge-wrapper { margin: 25px auto 0 auto; display: flex; justify-content: center; align-items: center; }
+.score-badge-outer {
+    width: 150px; height: 150px; border-radius: 50%; background: #1a365d; 
+    display: flex; justify-content: center; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.score-badge-inner {
+    width: 130px; height: 130px; border-radius: 50%; background: #d4b872; border: 4px solid #fdfbf4;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.badge-label { font-size: 16px; color: #fff; font-weight: 600; margin-bottom: 8px; }
+.badge-score { font-size: 60px; color: #fff; font-weight: 700; margin: 0; line-height: 1; }
+
+/* 🌟 ફૂટર 🌟 */
+.cert-footer-container {
+    position: absolute; bottom: 50px; left: 60px; right: 60px;
+    display: flex; justify-content: space-between; align-items: flex-end;
+}
+.cert-signature { text-align: left; font-size: 20px; color: #333; font-weight: 600; display: flex; align-items: center; gap: 15px; }
+.cert-date-box { text-align: right; font-size: 22px; color: #333; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+
+
+/* -------------------------------------
+   🏆 Floating Trophies & Medals Animation
+-------------------------------------- */
+.floating-item {
+    position: fixed;
+    bottom: -100px;
+    font-size: 40px; /* ઇમોજીની સાઈઝ */
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+    animation: floatUp 10s linear infinite;
+    z-index: -1;
+    opacity: 0.6; /* થોડું ઝાંખું રાખવા માટે જેથી ટેક્સ્ટ વંચાય */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg); /* ઉડતી વખતે ગોળ ફરશે */
+        opacity: 0;
+    }
+}
+
+/* -------------------------------------
+   📱 MOBILE & LANDSCAPE RESPONSIVENESS
+-------------------------------------- */
+@media screen and (max-width: 900px) and (orientation: landscape) { body { display: block; padding: 20px 10px; } .container { margin: 20px auto; height: auto; } }
+@media (max-width: 768px) {
+    body { display: block; padding: 25px 10px; }
+    .container { width: 95%; margin: 10px auto; max-width: 500px; padding: 15px; }
+    #options { grid-template-columns: 1fr; gap: 12px; }
+    .timer-circle { width: 60px; height: 60px; font-size: 20px; border: 3px solid #fff; }
+    .top-bar { padding: 5px 10px; margin-bottom: 8px; } .score { font-size: 18px; }
+    #question { font-size: 22px; margin-bottom: 10px; } .option { font-size: 16px; padding: 14px 15px; }
+    .emoji { font-size: 16px; min-height: 25px; }
+    .dashboard { flex-direction: column; gap: 10px; } .dash-card { min-width: 100%; text-align: center; }
+    .breakdown-list li { justify-content: space-around; }
+}
+
+/* 📱 MOBILE LANDSCAPE FIX (KBC Style Options) 📱 */
+/* આ કોડ સૌથી નીચે રાખવો જેથી તે 768px ના નિયમને ઓવરરાઈડ કરી શકે */
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    body { display: block; padding: 20px 10px; }
+    .container { margin: 20px auto; height: auto; }
+    #options { 
+        grid-template-columns: 1fr 1fr !important; /* અહી !important લગાવ્યું છે જેથી ઓપ્શન 2 કોલમમાં જ રહે */
+        gap: 12px; 
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating-item" style="left:10%; animation-duration:9s;">🏆</div>
+<div class="floating-item" style="left:30%; animation-duration:12s;">🥇</div>
+<div class="floating-item" style="left:50%; animation-duration:10s;">🏅</div>
+<div class="floating-item" style="left:70%; animation-duration:8s;">🏆</div>
+<div class="floating-item" style="left:90%; animation-duration:11s;">🎖️</div>
+
+<div class="container">
+
+    <div id="home" class="card">
+        <h2>👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ</h2>
+        <p class="creator-name">🎨 ક્વિઝ નિર્માતા: અમરજીતસિંહ પરમાર</p>
+        <p class="school-name">શ્રી લાખાણકા પ્રાથમિક શાળા</p>
+        <p class="school-location">તા. વલભીપુર, જિ. ભાવનગર</p>
+        <input type="text" id="studentName" placeholder="વિદ્યાર્થીનું નામ લખો">
+        <input type="text" id="schoolName" placeholder="શાળાનું નામ લખો">
+        <button class="start-btn" onclick="startQuiz()">🚀 ક્વિઝ શરૂ કરો</button>
+        <footer id="protected-footer">
+    <footer id="protected-footer"></footer>
+    </div>
+
+    <div id="quiz" class="card" style="display:none;">
+    <div class="top-bar">
+        <div class="timer-display">
+            ⏱️સમય:<span id="timer-display">30</span>
+        </div>
+        <div class="stylish-score">
+            🏆 સ્કોર:<span class="score-points" id="score">0</span> / 10
+        </div>
+    </div>
+        
+        <h3 id="question"></h3>
+        <div class="progress" id="progressBarContainer"></div>
+        <div id="options"></div>
+        <button class="next-btn" onclick="nextQuestion()">આગળનો પ્રશ્ન ➡️</button>
+        <div id="emojiEffect" class="emoji"></div>
+    </div>
+
+    <div id="result" class="card" style="display:none;">
+    <h2 style="font-size:28px; color:#1e293b; margin-bottom:10px;">🎉 અભિનંદન! અદ્દભુત પ્રદર્શન! (Quiz Complete)</h2>
+    <h2 style="color:#c2185b; margin-top:0;"><span id="finalName"></span></h2>
+    <h4 id="finalSchool" style="margin-top:0; color:#475569;"></h4>
+
+<!-- ⭐ સ્ટાર મેસેજ અહીં લાવો -->
+<p id="message" style="font-size:22px; font-weight:bold; margin:10px 0 20px 0; color:#f59e0b;"></p>
+
+    <div style="margin-bottom: 20px;">
+        <button class="regular-btn" onclick="downloadPNG()">📥 Certificate PNG</button>
+        <button class="regular-btn" onclick="downloadPDF()">📄 Certificate PDF</button>
+    </div>
+    
+    <div class="dashboard">
+        <div class="dash-card">
+            <p class="dash-title">Score</p>
+            <p class="dash-value" id="res-score">0/10</p>
+        </div>
+        <div class="dash-card">
+            <p class="dash-title">Accuracy</p>
+            <p class="dash-value" id="res-accuracy">0%</p>
+        </div>
+        <div class="dash-card" style="display:flex; flex-direction:column; justify-content:center;">
+            <ul class="breakdown-list">
+                <li><span>Right ✅</span> <span id="res-right" style="color:#4CAF50;">0</span></li>
+                <li><span>Wrong ❌</span> <span id="res-wrong" style="color:#f44336;">0</span></li>
+                <li><span>Skipped ⏭️</span> <span id="res-skipped" style="color:#64748b;">0</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div>
+        <button class="start-btn" onclick="location.reload()" style="font-size:20px; padding:10px 30px; margin-top:15px;">🔄 ફરી રમો</button>
+    </div>
+
+    
+        <div id="certificate">
+            <div class="cert-border"></div>
+            <div class="cert-border-inner"></div>
+            
+            <h1 class="cert-title">CERTIFICATE OF ACHIEVEMENT</h1>
+            <h2 class="cert-subtitle">👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ</h2>
+            
+            <p class="cert-body">આથી પ્રમાણિત કરવામાં આવે છે કે</p>
+            
+            <h1 id="certName" class="cert-name"></h1>
+            <h3 id="certSchool" class="cert-school"></h3>
+            
+            <p class="cert-body">એ <b>👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ</b> માં ઉત્કૃષ્ટ પ્રદર્શન કર્યું છે. ભવિષ્યમાં પણ આવા જ ઉત્સાહ, મહેનત અને તેજસ્વીતા સાથે આગળ વધતા રહો અને શાળા તેમજ સમાજનું નામ ઉજ્જવળ કરો તેવી હાર્દિક શુભકામનાઓ.<br>આપે કુલ 10 ગુણમાંથી</p>
+            
+            <div class="score-badge-wrapper">
+                <div class="score-badge-outer">
+                    <div class="score-badge-inner">
+                        <span class="badge-label">મેળવેલ ગુણ</span>
+                        <span class="badge-score" id="certScore">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cert-footer-container">
+                <div class="cert-signature">
+    <span style="font-size: 35px; margin-right: 15px;"></span>
+    <div class="sig-wrapper">
+        <div class="sig-cursive">A. G. Parmar</div>
+        <div class="sig-line"></div>
+        <p class="sig-name">🎨 Amarjeetsinh Parmar</p>
+        <p class="sig-title">Quiz Organizer</p>
+    </div>
+</div>
+                <div class="cert-date-box">
+                    <span style="font-size: 30px;">📅</span> Date: <span id="certDate"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+
+// રાઈટ-ક્લિક બંધ કરવા માટે
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// F12, Ctrl+U, Ctrl+Shift+I જેવા શોર્ટકટ્સ બંધ કરવા માટે
+document.onkeydown = function(e) {
+    if(e.keyCode == 123) { return false; } // F12
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } // Ctrl+Shift+I
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; } // Ctrl+Shift+C
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; } // Ctrl+Shift+J
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } // Ctrl+U (View Source)
+}
+
+let audioCtx;
+function initAudio(){ if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+
+function playBeep(type){
+    if(!audioCtx) return;
+    const osc = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    osc.connect(gainNode); gainNode.connect(audioCtx.destination);
+    osc.frequency.value = type === "correct" ? 900 : 300;
+    osc.type = "sine"; osc.start();
+    gainNode.gain.setValueAtTime(1, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.4);
+    osc.stop(audioCtx.currentTime + 0.4);
+}
+
+function playTick(){
+    if(!audioCtx) return;
+    const osc = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+    osc.connect(gainNode); gainNode.connect(audioCtx.destination);
+    osc.frequency.value = 1200; osc.type = "square"; osc.start();
+    gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+    gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.08);
+    osc.stop(audioCtx.currentTime + 0.08);
+}
+
+function saveToSheet(name, school, score) {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString("gu-IN"); // તારીખ
+    const timeStr = now.toLocaleTimeString("gu-IN"); // સમય
+    const title = "👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ"; // ક્વિઝનું નામ
+
+    fetch("https://script.google.com/macros/s/AKfycbzNtae775VQ52hiFZo-ZTyNuOy8njovbC0F62oxal3TfAnquSvlVzyps53vVA3x-T6b/exec", {
+        method: "POST",
+        body: JSON.stringify({
+            name: name,
+            school: school,
+            score: score + "/" + questions.length,
+            date: dateStr,
+            time: timeStr,
+            quizTitle: title
+        })
+    })
+    .then(res => res.text())
+    .then(data => console.log("ડેટા સેવ થઈ ગયો:", data))
+    .catch(err => console.error("ભૂલ આવી:", err));
+}
+
+function shuffleArray(array){
+    for(let i=array.length-1;i>0;i--){
+        let j=Math.floor(Math.random()*(i+1));
+        [array[i],array[j]]=[array[j],array[i]];
+    }
+    return array;
+}
+
+let questions = [
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેનો જન્મ કયા રાજ્યમાં થયો હતો?", 
+    o: ["ગુજરાત", "મહારાષ્ટ્ર", "મધ્યપ્રદેશ", "રાજસ્થાન"], 
+    a: 1 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેને ભારતના પ્રથમ _____ માનવામાં આવે છે.", 
+    o: ["મહિલા વડાપ્રધાન", "મહિલા પાયલોટ", "મહિલા શિક્ષિકા", "મહિલા ડોક્ટર"], 
+    a: 2 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેના પતિનું નામ શું હતું?", 
+    o: ["જ્યોતિરાવ ફૂલે", "મહાદેવ ગોવિંદ રાનડે", "બાબાસાહેબ આંબેડકર", "વિઠ્ઠલરાવ ફૂલે"], 
+    a: 0 
+  },
+  { 
+    q: "સાવિત્રીબાઈ અને જ્યોતિરાવ ફૂલેએ કયા વર્ષમાં કન્યાઓ માટેની પ્રથમ શાળા શરૂ કરી હતી?", 
+    o: ["1850", "1848", "1860", "1901"], 
+    a: 1 
+  },
+  { 
+    q: "કન્યાઓ માટેની પ્રથમ શાળા કયા શહેરમાં ખોલવામાં આવી હતી?", 
+    o: ["મુંબઈ", "સતારા", "પુણે", "નાસિક"], 
+    a: 2 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેએ કયા સામાજિક અનિષ્ટ સામે લડત આપી હતી?", 
+    o: ["અસ્પૃશ્યતા", "સતી પ્રથા", "બાળ લગ્ન", "આપેલ તમામ"], 
+    a: 3 
+  },
+  { 
+    q: "'કાવ્ય ફૂલે' પુસ્તક કોણે લખ્યું છે?", 
+    o: ["રવીન્દ્રનાથ ટાગોર", "સાવિત્રીબાઈ ફૂલે", "સરોજિની નાયડુ", "મહાત્મા ગાંધી"], 
+    a: 1 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેના સન્માનમાં કઈ યુનિવર્સિટીનું નામ બદલીને તેમના નામ પર રાખવામાં આવ્યું છે?", 
+    o: ["મુંબઈ યુનિવર્સિટી", "દિલ્હી યુનિવર્સિટી", "પુણે યુનિવર્સિટી", "ગુજરાત યુનિવર્સિટી"], 
+    a: 2 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલે જ્યારે શાળાએ ભણાવવા જતા ત્યારે લોકો તેમના પર શું ફેંકતા હતા?", 
+    o: ["ફૂલ", "પથ્થર અને કાદવ", "ચોકલેટ", "રંગો"], 
+    a: 1 
+  },
+  { 
+    q: "સાવિત્રીબાઈ ફૂલેનો જન્મ દિવસ (3 જાન્યુઆરી) મહારાષ્ટ્રમાં કયા દિવસ તરીકે ઉજવાય છે?", 
+    o: ["મહિલા દિન", "બાલિકા દિન (બાળકીઓનો દિવસ)", "માતૃ દિન", "શિક્ષણ દિન"], 
+    a: 1 
+  }
+];
+
+let current=0; let timer; let timeLeft=30; let answered=false;
+let score = 0; let wrongCount = 0; let skipCount = 0;
+
+function startQuiz(){
+    let name=document.getElementById("studentName").value;
+    let school=document.getElementById("schoolName").value;
+    if(name=="" || school==""){ alert("નામ અને શાળાનું નામ લખો"); return; }
+
+    initAudio(); if(audioCtx.state === 'suspended') { audioCtx.resume(); }
+    questions = shuffleArray(questions);
+    
+    current = 0; score = 0; wrongCount = 0; skipCount = 0;
+    document.getElementById("home").style.display="none";
+    document.getElementById("quiz").style.display="block";
+    
+    let progressContainer = document.getElementById("progressBarContainer");
+    progressContainer.innerHTML = "";
+    for(let i = 0; i < questions.length; i++) {
+        let box = document.createElement("div"); box.className = "step-box"; box.id = "step-" + i;
+        progressContainer.appendChild(box);
+    }
+    loadQuestion();
+}
+
+function loadQuestion(){
+    answered=false; clearInterval(timer); timeLeft=30;
+    document.getElementById("timer-display").innerText=timeLeft;
+    document.querySelector(".timer-display").style.background = "linear-gradient(145deg,#ff512f,#dd2476)";
+    document.getElementById("timer-display").style.color = "white";
+    document.getElementById("emojiEffect").innerText="";
+    document.getElementById("question").innerText=(current+1)+". "+questions[current].q;
+
+    let nextBtn = document.querySelector(".next-btn");
+    if(current === questions.length - 1){ nextBtn.innerHTML = "✅ ક્વિઝ સબમિટ કરો"; } 
+    else { nextBtn.innerHTML = "આગળનો પ્રશ્ન ➡️"; }
+
+    let optDiv=document.getElementById("options"); optDiv.innerHTML="";
+    let options = questions[current].o.map((opt,index)=>{ return {text:opt, index:index}; });
+    options = shuffleArray(options);
+
+    options.forEach((opt)=>{
+        let btn=document.createElement("button"); btn.className="option"; btn.innerText=opt.text;
+        btn.onclick=()=>selectAnswer(opt.index,btn); optDiv.appendChild(btn);
+    });
+
+    updateProgress();
+
+    timer=setInterval(()=>{
+        timeLeft--; document.getElementById("timer-display").innerText=timeLeft;
+        if(timeLeft <= 5){ playBeep("wrong"); } else { playTick(); }
+        if(timeLeft<=5){ document.querySelector(".timer-display").style.background =
+"linear-gradient(145deg,#ff0000,#990000)"; }
+        if(timeLeft<=0){ clearInterval(timer); nextQuestion(); }
+    },1000);
+}
+
+function selectAnswer(i,btn){
+    if(answered) return; answered=true;
+    let buttons = document.querySelectorAll(".option"); clearInterval(timer);
+
+    if(i==questions[current].a){
+        score++; btn.classList.add("correct"); playBeep("correct");
+        document.getElementById("step-" + current).classList.add("correct-step"); 
+        document.getElementById("emojiEffect").innerText="✅ સાચો જવાબ! 🥳 ખૂબ ખૂબ અભિનંદન";
+        speak("સાચો જવાબ"); confetti({particleCount:300,spread:120,origin:{y:0.6}});
+    }else{
+        wrongCount++; btn.classList.add("wrong");
+        buttons.forEach(button=>{ if(button.innerText == questions[current].o[questions[current].a]){ button.classList.add("correct"); } });
+        playBeep("wrong");
+        document.getElementById("step-" + current).classList.add("wrong-step"); 
+        document.getElementById("emojiEffect").innerText="❌ ખોટો જવાબ!😰 હજુ વધારે મહેનત કરો.";
+        speak("ખોટો જવાબ");
+    }
+    document.getElementById("score").innerText=score;
+}
+
+function nextQuestion(){
+    if(!answered){ skipCount++; document.getElementById("step-" + current).classList.add("skipped-step"); }
+    if(current < questions.length - 1){ current++; loadQuestion(); }
+    else{ showResult(); }
+}
+
+function updateProgress(){
+    for(let i = 0; i < questions.length; i++){
+        let box = document.getElementById("step-" + i); if(box) box.classList.remove("active");
+    }
+    let currentBox = document.getElementById("step-" + current); if(currentBox) currentBox.classList.add("active");
+}
+
+function showResult(){
+    clearInterval(timer);
+    document.getElementById("quiz").style.display="none"; document.getElementById("result").style.display="block";
+
+    let name=document.getElementById("studentName").value; let school=document.getElementById("schoolName").value;
+    saveToSheet(name, school, score);
+
+    document.getElementById("finalName").innerText = name;
+    document.getElementById("finalSchool").innerText = "🏫 શાળા: " + school;
+
+    document.getElementById("res-score").innerText = score + "/" + questions.length;
+    let accuracy = Math.round((score / questions.length) * 100);
+    document.getElementById("res-accuracy").innerText = accuracy + "%";
+    document.getElementById("res-right").innerText = score;
+    document.getElementById("res-wrong").innerText = wrongCount;
+    document.getElementById("res-skipped").innerText = skipCount;
+
+    let stars="⭐".repeat(Math.ceil(score/2)); document.getElementById("message").innerHTML =
+    "🌟 તમને મળ્યા: <span style='font-size:26px;'>" + stars + "</span>";
+    if(score >= 8){ confetti({particleCount:300,spread:120,origin:{y:0.6}}); }
+}
+
+function speak(text){
+    let speech = new SpeechSynthesisUtterance(text); speech.lang = "gu-IN"; window.speechSynthesis.speak(speech);
+}
+
+function prepareCertificate(){
+    let name = document.getElementById("studentName").value;
+    let school = document.getElementById("schoolName").value;
+    document.getElementById("certName").innerText = name;
+    document.getElementById("certSchool").innerText = "🏫 " + school;
+    document.getElementById("certScore").innerText = score;
+    let today = new Date();
+    document.getElementById("certDate").innerText = today.toLocaleDateString("gu-IN");
+}
+
+function downloadPNG(){
+    prepareCertificate();
+    let cert = document.getElementById("certificate");
+    cert.style.display = "block"; cert.style.opacity = "0";
+    setTimeout(() => {
+        cert.style.opacity = "1";
+        html2canvas(cert, { scale: 3 }).then(canvas => {
+            let link = document.createElement("a"); link.download = "👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ.png"; link.href = canvas.toDataURL("image/png"); link.click();
+            cert.style.display = "none";
+        });
+    }, 300);
+}
+
+function downloadPDF(){
+    prepareCertificate();
+    let cert = document.getElementById("certificate");
+    cert.style.display = "block"; cert.style.opacity = "0";
+    setTimeout(() => {
+        cert.style.opacity = "1";
+        html2canvas(cert, { scale: 3 }).then(canvas => {
+            const { jsPDF } = window.jspdf; let pdf = new jsPDF("landscape","pt","a4");
+            let imgData = canvas.toDataURL("image/png"); let width = pdf.internal.pageSize.getWidth(); let height = pdf.internal.pageSize.getHeight();
+            pdf.addImage(imgData,"PNG",0,0,width,height); pdf.save("👩🏻‍🏫 ભારતની પ્રથમ મહિલા શિક્ષિકા સાવિત્રીબાઈ ફૂલેની ક્વિઝ.pdf");
+            cert.style.display = "none";
+        });
+    }, 300);
+}
+
+(function() {
+       const encData = [128242, 32, 86, 105, 115, 105, 116, 32, 58, 32, 119, 119, 119, 46, 97, 109, 97, 114, 106, 101, 101, 116, 115, 105, 110, 104, 112, 97, 114, 109, 97, 114, 46, 98, 108, 111, 103, 115, 112, 111, 116, 46, 99, 111, 109];
+    
+    const encUrl = [104, 116, 116, 112, 115, 58, 47, 47, 97, 109, 97, 114, 106, 101, 101, 116, 115, 105, 110, 104, 112, 97, 114, 109, 97, 114, 46, 98, 108, 111, 103, 115, 112, 111, 116, 46, 99, 111, 109, 47];
+    
+    function decrypt(arr) {
+        return arr.map(code => String.fromCodePoint(code)).join('');
+    }
+
+    const secureHTML = `<strong><a href="${decrypt(encUrl)}" target="_blank" style="text-decoration:none; color:#16417C; cursor:pointer;">${decrypt(encData)}</a></strong>`;
+
+    function protectFooter() {
+        let footer = document.getElementById('protected-footer');
+        
+        if (!footer) {
+            footer = document.createElement('footer');
+            footer.id = 'protected-footer';
+            footer.style.cssText = "font-weight:bold; margin-top:20px; font-size:15px; text-align:center; display:block !important; padding:10px; z-index:9999;";
+            const target = document.querySelector('.container') || document.body;
+            target.appendChild(footer);
+        }
+
+        if (footer.innerHTML !== secureHTML) {
+            footer.innerHTML = secureHTML;
+        }
+
+        if (window.getComputedStyle(footer).display === 'none' || window.getComputedStyle(footer).visibility === 'hidden') {
+            footer.style.setProperty('display', 'block', 'important');
+            footer.style.setProperty('visibility', 'visible', 'important');
+            footer.style.setProperty('opacity', '1', 'important');
+        }
+    }
+
+    setInterval(protectFooter, 500);
+})();
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
